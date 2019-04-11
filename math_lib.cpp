@@ -12,4 +12,6 @@ long long lcm(long long m, long long n) {
 int main() {
     // expect: 4
     cout << gcd(8, 12) << endl;
+    // expect: 24 
+    cout << lcm(8, 12) << endl;
 }
