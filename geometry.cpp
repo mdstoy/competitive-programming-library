@@ -1,6 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+ * the intersection of two lines
+ * 
+ * @return pair<double, double> | first: coordinate of x / second: coordinate of y
+ */
 pair<double, double> intersection(double ax, double ay, double bx, double by, double cx, double cy, double dx, double dy) {
     // 0, a / x, b / sx, sy / tx, ty
     double s1 = ((dx - cx) * (ay - cy) - (dy - cy) * (ax - cx)) / 2;
