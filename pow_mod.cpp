@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int pow_mod(long long n, long long p, long long mod) {
+long long pow_mod(long long n, long long p, long long mod) {
     if (p == 0) {
         return 1;
     } else if (p % 2 == 1) {
