@@ -9,7 +9,7 @@ long long lcm(long long m, long long n) {
     return m * n / gcd(m, n);
 }
 
-bool isPrime(long long n) {
+bool is_prime(long long n) {
     if (n < 2) {
         return false;
     } else if (n == 2) {
@@ -34,7 +34,7 @@ int main() {
 
     // expected: 2 3 5 7 11 13 17 19....
     for (int i = 1; i <= 100; i++) {
-        if (isPrime(i)) {
+        if (is_prime(i)) {
             cout << i << " ";
         }
     }
