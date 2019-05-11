@@ -54,7 +54,7 @@ int main() {
     cout << endl;
 
     // expected: 1 10 2 5
-    auto v = divisor(10);
+    auto v = divisors(10);
     for (auto x : v) {
         cout << x << " ";
     }
