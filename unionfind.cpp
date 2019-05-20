@@ -41,6 +41,16 @@ class UnionFind {
         bool isSame(int x, int y) {
             return find(x) == find (y);
         }
+
+        int component_count() {
+            int c = 0;
+            for (const int x : parent) {
+                if (x < 0) {
+                    c++;
+                }
+            }
+            return c;
+        }
 };
 
 // cf: https://atcoder.jp/contests/atc001/tasks/unionfind_a
@@ -56,5 +66,7 @@ int main() {
             cout << (uf.isSame(a, b) ? "Yes" : "No") <<endl;
         }
     }
+    // expect: 5 | {0}, {1, 2, 3, 4}, {5}, {6}, {7}
+    cout << uf.component_count() << endl;
 }
 
