@@ -38,7 +38,7 @@ class UnionFind {
             return -parent[find(x)];
         }
 
-        bool isSame(int x, int y) {
+        bool is_same(int x, int y) {
             return find(x) == find (y);
         }
 
@@ -63,7 +63,7 @@ int main() {
         if (p == 0) {
             uf.unite(a, b);
         } else {
-            cout << (uf.isSame(a, b) ? "Yes" : "No") <<endl;
+            cout << (uf.is_same(a, b) ? "Yes" : "No") <<endl;
         }
     }
     // expect: 5 | {0}, {1, 2, 3, 4}, {5}, {6}, {7}
