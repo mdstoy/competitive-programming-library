@@ -1,6 +1,48 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+using ll = long long;
+
+class Combination {
+    vector<ll> factorial;
+    vector<ll> fact_inverse;
+    vector<ll> inverse;
+    int mod;
+
+    void init(int size) {
+        factorial[0] = 1;
+        factorial[1] = 1;
+        fact_inverse[0] = 1;
+        fact_inverse[1] = 1;
+        inverse[1] = 1;
+
+        for (int i = 2; i < size; i++) {
+            factorial[i] = factorial[i - 1] * i % mod;
+            inverse[i] = mod - inverse[mod % i] * (mod / i) % mod;
+            fact_inverse[i] = fact_inverse[i - 1] * inverse[i] % mod;
+        }
+    }
+
+    public:
+        Combination(int size, int m) {
+           factorial = vector<ll>(size);
+           fact_inverse = vector<ll>(size);
+           inverse = vector<ll>(size);
+           mod = m;
+           init(size);
+        }
+    
+        ll calc(int n, int k) {
+            if (n < k) {
+                return 0;
+            }
+            if (n < 0 || k < 0) {
+                return 0;
+            }
+            return factorial[n] * (fact_inverse[k] * fact_inverse[n - k] % mod) % mod;
+        }
+};
+
 template <typename T> bool next_combination(const T first, const T last, int k) {
     const T subset = first + k;
     // empty container | k = 0 | k == n 
@@ -40,6 +82,9 @@ void test(vector<int>& v, int k) {
 }
 
 int main() {
+
+    // next_combination
+
     vector<int> v{1, 2, 3, 4, 5, 6, 7};
     cout << "expected: a list of 7C3" << endl;
     test(v, 3);
@@ -60,4 +105,9 @@ int main() {
     test(x, 0);
     // Segmentation fault
     // test(x, 1); 
+
+    // Combination class (counting)
+    Combination combi = Combination(500000, 1000000007);
+    cout << combi.calc(5, 3) << endl;
+    cout << combi.calc(10000, 5000) << endl;
 }
