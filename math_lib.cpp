@@ -6,7 +6,8 @@ long long gcd(long long m, long long n) {
 }
 
 long long lcm(long long m, long long n) {
-    return m * n / gcd(m, n);
+    // If both m and n are large numbers, the result is overflow without parentheses.
+    return m * (n / gcd(m, n));
 }
 
 bool is_prime(long long n) {
@@ -44,6 +45,8 @@ int main() {
     cout << gcd(8, 12) << endl;
     // expected: 24 
     cout << lcm(8, 12) << endl;
+    // expected: 1000000000000000000 
+    cout << lcm(1000000000000000000, 500000000000000000) << endl;
 
     // expected: 2 3 5 7 11 13 17 19....
     for (int i = 1; i <= 100; i++) {
