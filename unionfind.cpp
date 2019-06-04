@@ -39,7 +39,7 @@ class UnionFind {
         }
 
         bool is_same(int x, int y) {
-            return find(x) == find (y);
+            return find(x) == find(y);
         }
 
         int component_count() {
