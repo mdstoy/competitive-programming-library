@@ -27,6 +27,21 @@ bool is_prime(long long n) {
     return true;
 }
 
+map<int, int> prime_factorization(int n) {
+    map<int, int> m;
+    int x = n;
+    int d = 2;
+    while (x > 1) {
+        if (x % d == 0) {
+            m[d]++;
+            x /= d;
+        } else {
+            d++;
+        }
+    }
+    return m;
+}
+
 vector<long long> divisors(long long n) {
     vector<long long> v;
     for (long long i = 1; i * i <= n; i++) {
