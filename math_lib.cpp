@@ -1,16 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-long long gcd(long long m, long long n) {
+using ll = long long;
+
+ll gcd(ll m, ll n) {
     return n != 0 ? gcd(n, m % n) : m;
 }
 
-long long lcm(long long m, long long n) {
+ll lcm(ll m, ll n) {
     // If both m and n are large numbers, the result is overflow without parentheses.
     return m * (n / gcd(m, n));
 }
 
-bool is_prime(long long n) {
+bool is_prime(ll n) {
     if (n < 2) {
         return false;
     } else if (n == 2) {
@@ -19,7 +21,7 @@ bool is_prime(long long n) {
         return false;
     }
  
-    for (long long i = 3; i <= sqrt(n); i += 2) {
+    for (ll i = 3; i <= sqrt(n); i += 2) {
         if (n % i == 0) {
             return false;
         }
@@ -42,9 +44,9 @@ map<int, int> prime_factorization(int n) {
     return m;
 }
 
-vector<long long> divisors(long long n) {
-    vector<long long> v;
-    for (long long i = 1; i * i <= n; i++) {
+vector<ll> divisors(ll n) {
+    vector<ll> v;
+    for (ll i = 1; i * i <= n; i++) {
         if (n % i == 0) {
             v.push_back(i);
             if (i * i != n) {
