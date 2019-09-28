@@ -80,4 +80,10 @@ int main() {
         cout << x << " ";
     }
     cout << endl;
+
+    auto factors = prime_factorization(2LL*2*2*3*3*5*7*13*23*1000000007);
+    for (auto x : factors) {
+        cout << x.first << "(" << x.second << ") | ";
+    }
+    cout << endl;
 }
