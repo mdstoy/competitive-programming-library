@@ -29,11 +29,11 @@ bool is_prime(ll n) {
     return true;
 }
 
-map<int, int> prime_factorization(int n) {
-    map<int, int> m;
-    int x = n;
-    int d = 2;
-    while (x > 1) {
+map<ll, ll> prime_factorization(ll n) {
+    map<ll, ll> m;
+    ll x = n;
+    ll d = 2;
+    while (x > 1 && d * d <= n) {
         if (x % d == 0) {
             m[d]++;
             x /= d;
@@ -41,6 +41,7 @@ map<int, int> prime_factorization(int n) {
             d++;
         }
     }
+    if (x != 1) m[x]++;
     return m;
 }
 
