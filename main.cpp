@@ -13,6 +13,14 @@ template<class T> inline bool chmax(T& a, T b) {if (a < b) {a = b; return true;}
 const int MOD = 1000000007;
 const int INF = 1000000001;
 
+void solve();
+
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    solve();
+}
+
+void solve() {
 
 }
