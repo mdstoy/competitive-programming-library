@@ -12,6 +12,7 @@ template<class T> inline bool chmin(T& a, T b) {if (a > b) {a = b; return true;}
 template<class T> inline bool chmax(T& a, T b) {if (a < b) {a = b; return true;} return false;}
 const int MOD = 1000000007;
 const int INF = 1000000001;
+const char EOL = '\n';
 
 void solve();
 
