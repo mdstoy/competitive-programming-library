@@ -13,6 +13,7 @@ template<class T> inline bool chmin(T& a, T b) {if (a > b) {a = b; return true;}
 template<class T> inline bool chmax(T& a, T b) {if (a < b) {a = b; return true;} return false;}
 const int MOD = 1000000007;
 const int INF = 1000000001;
+const ll LINF = 1000000001000000001LL;
 const char EOL = '\n';
 
 void solve();
@@ -20,6 +21,7 @@ void solve();
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
+    cout << fixed << setprecision(10);
     solve();
     return 0;
 }
