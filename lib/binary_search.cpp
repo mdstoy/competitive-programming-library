@@ -1,15 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// already accepted at https://atcoder.jp/contests/abc144/submissions/8181967
+// already accepted at https://atcoder.jp/contests/abc144/submissions/8182185
 
-template<typename D, typename F> class BinarySearch {
+// usage : BinarySearch<type> bs(left, right, lambda);
+// ex : BinarySearch<ll> bs(-1LL, LINF, lambda);
+
+template<typename D> class BinarySearch {
     D left;
     D right;
-    F func;
+    function<bool(D)> func;
 
     public:
-        BinarySearch(D l, D r, F f) {
+        BinarySearch(D l, D r, function<bool(D)> f) {
             left = l;
             right = r;
             func = f;
