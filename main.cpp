@@ -21,7 +21,7 @@ void solve();
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    cout << fixed << setprecision(10);
+    cout << fixed << setprecision(numeric_limits<double>::max_digits10);
     solve();
     return 0;
 }
