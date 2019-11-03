@@ -18,6 +18,7 @@ Utility for AtCoder written in c++
         - imitating next_combination
 - geometry.cpp
     - computing a intersection of two lines
+    - distanse between point and line
 - math_lib.cpp
     - gcd and lcm
     - is prime?
