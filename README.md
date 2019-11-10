@@ -16,6 +16,8 @@ Utility for AtCoder written in c++
     - combination calculator
     - next_combination function
         - imitating next_combination
+- dijkstra.cpp
+    - utility of dijkstra Algorithm
 - geometry.cpp
     - computing a intersection of two lines
     - distanse between point and line
