@@ -41,6 +41,10 @@ class Combination {
             }
             return factorial[n] * (fact_inverse[k] * fact_inverse[n - k] % mod) % mod;
         }
+
+        ll with_repetition(int n, int k) {
+            return calc(n + k - 1, k);
+        }
 };
 
 template <typename T> bool next_combination(const T first, const T last, int k) {
@@ -110,4 +114,9 @@ int main() {
     Combination combi = Combination(500000, 1000000007);
     cout << combi.calc(5, 3) << endl;
     cout << combi.calc(10000, 5000) << endl;
+
+    // expected 15
+    cout << combi.with_repetition(5, 2) << endl;
+    // expected 6 
+    cout << combi.with_repetition(3, 2) << endl;
 }
