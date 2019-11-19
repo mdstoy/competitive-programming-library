@@ -27,5 +27,11 @@ int main() {
 }
 
 void solve() {
-
+    int n, k;
+    cin >> n >> k;
+    vector<string> v(n);
+    REP(i, n) cin >> v[i];
+    sort(ALL(v), greater<string>());
+    REP(i, n) cout << v[i];
+    cout << EOL;
 }

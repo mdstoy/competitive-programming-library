@@ -15,7 +15,7 @@ Utility for AtCoder written in c++
 - combination_lib.cpp
     - combination calculator
     - next_combination function
-        - imitating next_combination
+        - imitating next_premutation
 - dijkstra.cpp
     - utility of dijkstra Algorithm
 - geometry.cpp
