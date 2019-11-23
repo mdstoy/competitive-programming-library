@@ -7,6 +7,7 @@ using ll = long long;
 #define REP(i, n) FOR(i, 0, (n))
 #define REPR(i, n) FORR(i, (n) - 1, 0)
 #define REP1(i, n) FOR(i, 1, (n) + 1)
+#define REPS(c, s) for (char c : s)
 #define ALL(c) (c).begin(), (c).end()
 #define sz(v) (int)v.size()
 template<class T> inline bool chmin(T& a, T b) {if (a > b) {a = b; return true;} return false;}
@@ -27,11 +28,5 @@ int main() {
 }
 
 void solve() {
-    int n, k;
-    cin >> n >> k;
-    vector<string> v(n);
-    REP(i, n) cin >> v[i];
-    sort(ALL(v), greater<string>());
-    REP(i, n) cout << v[i];
-    cout << EOL;
+
 }
