@@ -22,11 +22,11 @@ template<typename D> class BinarySearch {
             while (abs(right - left) > 1) {
                 D m = (left + right) / 2;
                 if (func(m)) {
-                    right = m;
-                } else {
                     left = m;
+                } else {
+                    right = m;
                 }
             }
-            return right;
+            return left;
         }
 };
