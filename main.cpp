@@ -2,6 +2,7 @@
 using namespace std;
 
 using ll = long long;
+using ld = long double;
 #define FOR(i, m, n) for (int i = (m); i < (n); i++)
 #define FORR(i, m, n) for (int i = (m); i >= (n); i--)
 #define REP(i, n) FOR(i, 0, (n))
@@ -30,3 +31,5 @@ int main() {
 void solve() {
 
 }
+
+
