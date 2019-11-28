@@ -2,6 +2,8 @@
 using namespace std;
 
 using ll = long long;
+#define FOR(i, m, n) for (int i = (m); i < (n); i++)
+#define REP(i, n) FOR(i, 0, (n))
 
 class Combination {
     vector<ll> factorial;
@@ -72,7 +74,7 @@ template <typename T> bool next_combination(const T first, const T last, int k) 
     return false;
 }
 
-vector<vector<ll>> init_combi(int n) {
+vector<vector<ll>> pascals_triangle(int n) {
     vector<vector<ll>> combi(n + 1, vector<ll>(n + 1));
     REP(i, n + 1) REP(j, i + 1) {
         if (j == 0 || j == i) combi[i][j] = 1LL;
@@ -128,4 +130,13 @@ int main() {
     cout << combi.with_repetition(5, 2) << endl;
     // expected 6 
     cout << combi.with_repetition(3, 2) << endl;
+
+    // Pascal's triangle
+    auto tri = pascals_triangle(50);
+    REP(i, 21) {
+        REP(j, i + 1) {
+            cout << tri[i][j] << " ";
+        }
+        cout << endl;
+    }
 }
