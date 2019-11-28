@@ -72,6 +72,15 @@ template <typename T> bool next_combination(const T first, const T last, int k) 
     return false;
 }
 
+vector<vector<ll>> init_combi(int n) {
+    vector<vector<ll>> combi(n + 1, vector<ll>(n + 1));
+    REP(i, n + 1) REP(j, i + 1) {
+        if (j == 0 || j == i) combi[i][j] = 1LL;
+        else combi[i][j] = combi[i - 1][j - 1] + combi[i - 1][j];
+    }
+    return combi;
+}
+
 void test(vector<int>& v, int k) {
     do {
         for (int i = 0; i < k; i++) {
