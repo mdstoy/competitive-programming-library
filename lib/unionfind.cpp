@@ -42,6 +42,7 @@ class UnionFind {
             return find(x) == find(y);
         }
 
+        // CAUTION!! : This method is heavy due to scanning linearly.
         int component_count() {
             int c = 0;
             for (const int x : parent) {
