@@ -29,6 +29,8 @@ Utility for AtCoder written in c++
     - divisors
 - mod_lib.cpp
     - some function for computing large numbers
+- string_lib.cpp
+    - explode (featuring the function from PHP)
 - unionfind.cpp
     - union-find data structure by size
 - warshall_floyd.cpp
