@@ -13,12 +13,12 @@ using ld = long double;
 #define SORT(c) sort(ALL(c))
 #define REV(c) reverse(ALL(c))
 #define sz(v) (int)v.size()
+#define endl '\n';
 template<class T> inline bool chmin(T& a, T b) {if (a > b) {a = b; return true;} return false;}
 template<class T> inline bool chmax(T& a, T b) {if (a < b) {a = b; return true;} return false;}
 const int MOD = 1000000007;
 const int INF = 1000000001;
 const ll LINF = 1000000001000000001LL;
-const char EOL = '\n';
  
 void solve();
  
