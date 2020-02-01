@@ -38,6 +38,8 @@ Utility for AtCoder written in c++
 
 ### lib/segment_tree
 
+- point_add_range_sum.cpp
+    - range sum
 - range_minimum_query.cpp
     - RMQ
 - with_min_index.cpp
