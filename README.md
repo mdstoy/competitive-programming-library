@@ -36,3 +36,10 @@ Utility for AtCoder written in c++
 - warshall_floyd.cpp
     - utility of Warshall-Floyd Algorithm
 
+### lib/segment_tree
+
+- range_minimum_query.cpp
+    - RMQ
+- with_min_index.cpp
+    - RMQ with minimum index
+
