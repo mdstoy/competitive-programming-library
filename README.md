@@ -30,7 +30,8 @@ Utility for AtCoder written in c++
 - mod_lib.cpp
     - some function for computing large numbers
 - string_lib.cpp
-    - explode (featuring the function from PHP)
+    - explode (featuring same function from PHP)
+    - z_algorithm
 - unionfind.cpp
     - union-find data structure by size
 - warshall_floyd.cpp
