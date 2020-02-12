@@ -23,6 +23,14 @@ T calc_mod(string s, T d) {
     return r;
 }
 
+vector<ll> mod_inverses(ll n, ll m) {
+    vector<ll> inv(n + 1);
+    inv[1] = 1;
+    for (int i = 2; i <= n; i++)
+        inv[i] = inv[m % i] * (m - m / i) % m;
+    return inv;
+}
+
 int main() {
     // cf: https://atcoder.jp/contests/atc002/tasks/atc002_b
     ll n, m, p;
