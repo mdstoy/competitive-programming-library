@@ -11,31 +11,6 @@ template<typename D> class BinarySearch {
     function<bool(D)> func;
 
     public:
-        BinarySearch(D l, D r, function<bool(D)> f) {
-            left = l;
-            right = r;
-            func = f;
-        }
-
-        D calc() {
-            while (abs(right - left) > 1) {
-                D m = (left + right) / 2;
-                if (func(m)) {
-                    left = m;
-                } else {
-                    right = m;
-                }
-            }
-            return left;
-        }
-};
-
-template<typename D> class BinarySearchR {
-    D left;
-    D right;
-    function<bool(D)> func;
-
-    public:
         BinarySearchR(D l, D r, function<bool(D)> f) {
             left = l;
             right = r;
