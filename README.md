@@ -12,11 +12,6 @@ Utility for AtCoder written in c++
 
 ## lib directory
 
-- combination_lib.cpp
-    - combination calculator
-    - next_combination function
-        - imitating next_premutation
-    - Pascal's triangle calculator
 - dijkstra.cpp
     - utility of dijkstra Algorithm
 - geometry.cpp
@@ -36,6 +31,20 @@ Utility for AtCoder written in c++
     - union-find data structure by size
 - warshall_floyd.cpp
     - utility of Warshall-Floyd Algorithm
+
+### lib/combination
+
+containing combination libraries
+
+- combination_class.cpp
+    - combination calculator
+- next_combination.cpp
+    - next_combination function
+        - imitating next_premutation
+- order_k_combination.cpp
+    - calculate the number of combinations as formula (required inverse list)
+- pascals_triangle.cpp
+    - Pascal's triangle calculator
 
 ### lib/segment_tree
 
