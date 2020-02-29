@@ -3,6 +3,10 @@ using namespace std;
  
 using ll = long long;
 using ld = long double;
+using vi = vector<int>;
+using vvi = vector<vector<int>>;
+using vl = vector<ll>;
+using vvl = vector<vector<ll>>;
 #define FOR(i, m, n) for (int i = (m); i < (n); i++)
 #define FORR(i, m, n) for (int i = (m); i >= (n); i--)
 #define REP(i, n) FOR(i, 0, (n))
