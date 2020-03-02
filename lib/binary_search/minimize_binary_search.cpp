@@ -11,7 +11,7 @@ template<typename D> class BinarySearch {
     function<bool(D)> func;
 
     public:
-        BinarySearchR(D l, D r, function<bool(D)> f) {
+        BinarySearch(D l, D r, function<bool(D)> f) {
             left = l;
             right = r;
             func = f;
