@@ -24,9 +24,6 @@ Utility for AtCoder written in c++
     - divisors
 - mod_lib.cpp
     - some function for computing large numbers
-- string_lib.cpp
-    - explode (featuring same function from PHP)
-    - z_algorithm
 - unionfind.cpp
     - union-find data structure by size
 - warshall_floyd.cpp
@@ -54,4 +51,11 @@ containing combination libraries
     - RMQ
 - with_min_index.cpp
     - RMQ with minimum index
+
+### lib/string
+
+- explode (featuring same function from PHP)
+    - to string version
+    - to int version
+- z_algorithm
 
