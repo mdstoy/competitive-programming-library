@@ -21,6 +21,7 @@ using vvl = vector<vector<ll>>;
 template<class T> inline bool chmin(T& a, T b) {if (a > b) {a = b; return true;} return false;}
 template<class T> inline bool chmax(T& a, T b) {if (a < b) {a = b; return true;} return false;}
 template<class T> inline void printv(vector<T>& v) {int n = sz(v); REP(i, n) cout << v[i] << (i == n - 1 ? endl : ' ');}
+template<class T> inline void printvv(vector<vector<T>>& v) {for (auto u : v) printv(u);}
 template<class T> inline void printlnv(vector<T>& v) {int n = sz(v); REP(i, n) cout << v[i] << endl;}
 const int MOD = 1000000007;
 const int INF = 1000000001;
