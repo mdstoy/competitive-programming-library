@@ -12,6 +12,10 @@ ll lcm(ll m, ll n) {
     return m * (n / gcd(m, n));
 }
 
+ll arithmetic_series(ll n, ll a, ll d = 1) {
+    return (2 * a + (n - 1) * d) * n / 2;
+}
+
 bool is_prime(ll n) {
     if (n < 2) {
         return false;
