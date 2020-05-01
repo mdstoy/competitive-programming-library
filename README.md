@@ -29,6 +29,19 @@ Utility for AtCoder written in c++
 - warshall_floyd.cpp
     - utility of Warshall-Floyd Algorithm
 
+### lib/binary_search
+
+binary search helper libraries
+
+- maxmize_binary_search.cpp
+    - find the maximum value that satisfies the condition
+- real_maxmize_binary_search.cpp
+    - find the maximum value of real number that satisfies the condition
+- minimize_binary_search.cpp
+    - find the minimum value that satisfies the condition
+- real_minimize_binary_search.cpp
+    - find the minimum value of real number that satisfies the condition
+
 ### lib/combination
 
 containing combination libraries
