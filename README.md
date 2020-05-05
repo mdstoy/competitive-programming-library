@@ -1,6 +1,6 @@
-# atcoder-cpp
+# competitive-programming-library
 
-Utility for AtCoder written in c++
+Library of Competitive programming written in c++
 
 # Contents
 
