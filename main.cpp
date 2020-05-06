@@ -5,8 +5,10 @@ using ll = long long;
 using ld = long double;
 using vi = vector<int>;
 using vvi = vector<vector<int>>;
+using vvvi = vector<vector<vector<int>>>;
 using vl = vector<ll>;
 using vvl = vector<vector<ll>>;
+using vvvl = vector<vector<vector<ll>>>;
 #define FOR(i, m, n) for (int i = (m); i < (n); i++)
 #define FORR(i, m, n) for (int i = (m); i >= (n); i--)
 #define REP(i, n) FOR(i, 0, (n))
@@ -20,6 +22,7 @@ using vvl = vector<vector<ll>>;
 #define endl '\n'
 template<class T> inline bool chmin(T& a, T b) {if (a > b) {a = b; return true;} return false;}
 template<class T> inline bool chmax(T& a, T b) {if (a < b) {a = b; return true;} return false;}
+template<class T> inline void prn(vector<T>& v) {int n = sz(v); REP(i, n) cout << v[i] << ' ';}
 template<class T> inline void printv(vector<T>& v) {int n = sz(v); REP(i, n) cout << v[i] << (i == n - 1 ? endl : ' ');}
 template<class T> inline void printvv(vector<vector<T>>& v) {for (auto u : v) printv(u);}
 template<class T> inline void printlnv(vector<T>& v) {int n = sz(v); REP(i, n) cout << v[i] << endl;}
