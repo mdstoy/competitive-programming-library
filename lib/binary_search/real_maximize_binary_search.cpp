@@ -9,7 +9,8 @@ template<typename D, class... A> class BinarySearch {
     D left;
     D right;
     function<bool(D, A...)> func;
-    int limiter = 0;
+    // NOTE: adjust the limiter
+    int limiter = 100;
 
     public:
         BinarySearch(D l, D r, function<bool(D, A...)> f) {
@@ -27,8 +28,7 @@ template<typename D, class... A> class BinarySearch {
                 } else {
                     right = middle;
                 }
-                // NOTE: adjust the limiter
-                if (limiter++ > 1000) break;
+                if (--limiter < 0) break;
             }
             return left;
         }
