@@ -24,6 +24,7 @@ class Combination {
     }
 
     public:
+        // Up to about 2,000,000 can be processed within 1 sec.
         Combination(int size, int m) {
            factorial = vector<ll>(size);
            fact_inverse = vector<ll>(size);
