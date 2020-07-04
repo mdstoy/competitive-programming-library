@@ -9,6 +9,8 @@ using vvvi = vector<vector<vector<int>>>;
 using vl = vector<ll>;
 using vvl = vector<vector<ll>>;
 using vvvl = vector<vector<vector<ll>>>;
+using vs = vector<string>;
+using vb = vector<bool>;
 #define FOR(i, m, n) for (int i = (m); i < (n); i++)
 #define FORR(i, m, n) for (int i = (m); i >= (n); i--)
 #define REP(i, n) FOR(i, 0, (n))
