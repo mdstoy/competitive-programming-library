@@ -26,14 +26,22 @@ public:
         }
     }
 
-    void inc(int x) {
+    void increment(int x) {
         x += (n - 1);
         node[x]++;
         while(x > 0) {
             x = (x - 1) / 2;
             node[x] = min(node[2 * x + 1], node[2 * x + 2]);
         }
-        // REP(i, sz(node)) cout << node[i] << ", "; cout << endl;
+    }
+
+    void decrement(int x) {
+        x += (n - 1);
+        node[x]--;
+        while(x > 0) {
+            x = (x - 1) / 2;
+            node[x] = min(node[2 * x + 1], node[2 * x + 2]);
+        }
     }
 
     int find(int a, int b, int k = 0, int l = 0, int r = -1) {
@@ -44,6 +52,15 @@ public:
         int vl = find(a, b, 2 * k + 1, l, (l + r) / 2);
         int vr = find(a, b, 2 * k + 2, (l + r) / 2, r);
         return min(vl, vr);
+    }
+
+    int find_index(int a, int b, int k = 0, int l = 0, int r = -1) {
+        if(r < 0) r = n;
+        if(r <= a || b <= l) return INF;
+        if(k >= n - 1) return k - n + 1;
+
+        if (node[2 * k + 1] <= node[2 * k + 2]) return find_index(a, b, 2 * k + 1, l, (l + r) / 2);
+        else return find_index(a, b, 2 * k + 2, (l + r) / 2, r);
     }
 
     pair<int, int> find_with_min_index(int a, int b, int k = 0, int l = 0, int r = -1) {
