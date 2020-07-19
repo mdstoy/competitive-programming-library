@@ -6,6 +6,13 @@ class mint {
     public:
         constexpr mint(ll src = 0, int m = 1000000007) noexcept : value((src % m + m) % m), mod(m) {}
 
+        constexpr ll v() { return value; }
+
+        constexpr mint operator+(const mint rhs) const noexcept {return mint(*this) += rhs;}
+        constexpr mint operator-(const mint rhs) const noexcept {return mint(*this) -= rhs;}
+        constexpr mint operator*(const mint rhs) const noexcept {return mint(*this) *= rhs;}
+        constexpr mint operator/(const mint rhs) const noexcept {return mint(*this) /= rhs;}
+
         constexpr mint &operator+=(const mint rhs) noexcept {
             value += rhs.value;
             if (value >= mod) value -= mod;
@@ -32,20 +39,4 @@ class mint {
             }
             return *this;
         }
-
-        constexpr mint operator+(const mint rhs) const noexcept {
-            return mint(*this) += rhs;
-        }
-        
-        constexpr mint operator-(const mint rhs) const noexcept {
-            return mint(*this) -= rhs;
-        }
-  
-        constexpr mint operator*(const mint rhs) const noexcept {
-            return mint(*this) *= rhs;
-        }
-       
-        constexpr mint operator/(const mint rhs) const noexcept {
-            return mint(*this) /= rhs;
-        }
-}
+};

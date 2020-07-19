@@ -24,6 +24,8 @@ Library of Competitive programming written in c++
     - divisors
 - mod_lib.cpp
     - some function for computing large numbers
+- modint.cpp
+    - what is called "modint"
 - unionfind.cpp
     - union-find data structure by size
 - warshall_floyd.cpp
