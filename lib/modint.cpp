@@ -39,4 +39,10 @@ class mint {
             }
             return *this;
         }
+
+        constexpr mint pow(ll p) noexcept {
+            if (p == 0) return 1;
+            else if (p % 2 == 1) return pow(p - 1) * *this;
+            else { mint a = pow(p / 2); return a * a; }
+        }
 };
