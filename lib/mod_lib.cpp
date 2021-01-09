@@ -16,10 +16,9 @@ ll pow_mod(ll n, ll p, ll mod) {
     }
 }
 
-template<typename T>
-T calc_mod(string s, T d) {
+template<typename T> T calc_mod(string s, T d) {
     T r = 0;
-    REP(i, s.size()) r = (r * 10 + (s[i] - '0')) % d;
+    REP(i, (int)s.size()) r = (r * 10 + (s[i] - '0')) % d;
     return r;
 }
 
