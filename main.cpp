@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-#include <atcoder/all>
-using namespace atcoder;
+// #include <atcoder/all>
+// using namespace atcoder;
  
 using ll = long long;
 using ld = long double;
