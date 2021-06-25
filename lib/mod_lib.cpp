@@ -16,6 +16,10 @@ ll pow_mod(ll n, ll p, ll mod) {
     }
 }
 
+ll mod_inv(ll x, ll mod) {
+    return pow_mod(x, mod - 2, mod);
+}
+
 template<typename T> T calc_mod(string s, T d) {
     T r = 0;
     REP(i, (int)s.size()) r = (r * 10 + (s[i] - '0')) % d;
