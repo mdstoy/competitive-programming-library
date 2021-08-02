@@ -35,4 +35,9 @@ bin/
 old/
 srm/
 .vscode/
+
+#ac-library
 atcoder/
+expander.py
+combined.cpp
+
