@@ -13,6 +13,7 @@ using vvl = vector<vector<ll>>;
 using vvvl = vector<vector<vector<ll>>>;
 using vs = vector<string>;
 using vb = vector<bool>;
+using vvb = vector<vector<bool>>;
 #define FOR(i, m, n) for (int i = (m); i < (n); i++)
 #define FORR(i, m, n) for (int i = (m); i >= (n); i--)
 #define REP(i, n) FOR(i, 0, (n))
@@ -33,6 +34,7 @@ template<class T> inline void printvm(vector<T>& v) {int n = sz(v); REP(i, n) co
 template<class T> inline void printvvm(vector<vector<T>>& v) {for (auto u : v) printvm(u);}
 template<class T> inline void printlnv(vector<T>& v) {int n = sz(v); REP(i, n) cout << v[i] << endl;}
 const int MOD = 1000000007;
+// const int MOD = 998244353;
 const int INF = 1000000001;
 const ll LINF = 1000000001000000001LL;
  
