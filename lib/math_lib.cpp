@@ -65,19 +65,6 @@ int factorize_count(int n) {
     return p;
 }
 
-vector<ll> divisors(ll n) {
-    vector<ll> v;
-    for (ll i = 1; i * i <= n; i++) {
-        if (n % i == 0) {
-            v.push_back(i);
-            if (i * i != n) {
-                v.push_back(n / i);
-            }
-        }
-    }
-    return v;
-}
-
 int main() {
     // expected: 4
     cout << gcd(8, 12) << endl;
@@ -91,13 +78,6 @@ int main() {
         if (is_prime(i)) {
             cout << i << " ";
         }
-    }
-    cout << endl;
-
-    // expected: 1 10 2 5
-    auto v = divisors(10);
-    for (auto x : v) {
-        cout << x << " ";
     }
     cout << endl;
 
