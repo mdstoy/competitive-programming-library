@@ -10,7 +10,7 @@ template<typename T> vector<bool> eratosthenes(T n) {
     for (T i = 2; i * i <= n; i++) {
         if (!is_prime[i]) continue;
         for (T j = i * 2; j <= n; j += i) {
-            is_prime[i] = false;
+            is_prime[j] = false;
         }
     }
     return is_prime;
