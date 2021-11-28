@@ -3,10 +3,12 @@ using namespace std;
 
 class UnionFind {
     vector<int> parent;
+    int count;
 
     public:
         UnionFind(int size) {
             parent = vector<int>(size, -1);
+            count = size;
         }
 
         int find(int x) {
@@ -24,6 +26,7 @@ class UnionFind {
                 // already united
                 return false;
             }
+            count--;
             if (size(rX) < size(rY)) {
                 int tmp = rX;
                 rX = rY;
@@ -42,15 +45,8 @@ class UnionFind {
             return find(x) == find(y);
         }
 
-        // CAUTION!! : This method is heavy due to scanning linearly.
         int component_count() {
-            int c = 0;
-            for (const int x : parent) {
-                if (x < 0) {
-                    c++;
-                }
-            }
-            return c;
+            return count;
         }
 };
 
