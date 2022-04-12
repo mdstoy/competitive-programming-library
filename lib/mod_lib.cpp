@@ -5,18 +5,20 @@ using ll = long long;
 #define FOR(i, m, n) for (int i = (m); i < (n); i++)
 #define REP(i, n) FOR(i, 0, (n))
 
-ll pow_mod(ll n, ll p, ll mod) {
+// use ac-library instead of this when submitting AtCoder
+long long pow_mod(long long n, long long p, long long mod) {
     if (p == 0) {
         return 1;
     } else if (p % 2 == 1) {
         return pow_mod(n, p - 1, mod) * n % mod;
     } else {
-        ll s = pow_mod(n, p / 2, mod);
+        long long s = pow_mod(n, p / 2, mod);
         return s * s % mod;
     }
 }
 
-ll mod_inv(ll x, ll mod) {
+// use ac-library instead of this when submitting AtCoder
+long long mod_inv(long long x, long long mod) {
     return pow_mod(x, mod - 2, mod);
 }
 

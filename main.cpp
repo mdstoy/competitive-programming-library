@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-// #include <atcoder/all>
-// using namespace atcoder;
+#include <atcoder/all>
+using namespace atcoder;
  
 using ll = long long;
 using ld = long double;
@@ -48,6 +48,9 @@ int main() {
     return 0;
 }
 
+using mint = modint1000000007;
 void solve() {
-
+    int a, b;
+    cin >> a >> b;
+    cout << mint(a).pow(b).val() << endl;
 }
