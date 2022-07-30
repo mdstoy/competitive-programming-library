@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// verifing: https://judge.yosupo.jp/submission/97567
+
 using ll = long long;
 const int INF = 1000000001;
 const ll LINF = 1000000001000000001LL;
