@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-#include <atcoder/all>
-using namespace atcoder;
+// #include <atcoder/all>
+// using namespace atcoder;
  
 using ll = long long;
 using ld = long double;
@@ -36,8 +36,8 @@ template<class T> inline void printvv(vector<vector<T>>& v) {for (auto u : v) pr
 template<class T> inline void printvm(vector<T>& v) {int n = sz(v); REP(i, n) cout << v[i].val() << (i == n - 1 ? '\n' : ' ');}
 template<class T> inline void printvvm(vector<vector<T>>& v) {for (auto u : v) printvm(u);}
 template<class T> inline void printlnv(vector<T>& v) {int n = sz(v); REP(i, n) cout << v[i] << '\n';}
-// const int MOD = 1000000007;
-const int MOD = 998244353;
+const int MOD = 1000000007;
+// const int MOD = 998244353;
 // using mint = modint1000000007;
 // using mint = modint998244353;
 const int INF = 1000000001;
