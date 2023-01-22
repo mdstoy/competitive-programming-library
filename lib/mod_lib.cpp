@@ -22,8 +22,8 @@ long long mod_inv(long long x, long long mod) {
     return pow_mod(x, mod - 2, mod);
 }
 
-template<typename T> T calc_mod(string s, T d) {
-    T r = 0;
+ll calc_mod(string s, ll d) {
+    ll r = 0;
     REP(i, (int)s.size()) r = (r * 10 + (s[i] - '0')) % d;
     return r;
 }
