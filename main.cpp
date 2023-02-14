@@ -24,6 +24,8 @@ using vvb = vector<vector<bool>>;
 #define SORT(c) sort(ALL(c))
 #define REV(c) reverse(ALL(c))
 #define sz(v) (int)v.size()
+#define yn(b) (b ? "Yes" : "No")
+#define YN(b) (b ? "YES" : "NO")
 // #define INTERACTIVE
 #ifndef INTERACTIVE
 #define endl '\n'
