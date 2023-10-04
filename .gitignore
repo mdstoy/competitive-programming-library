@@ -37,6 +37,7 @@ srm/
 .vscode/
 
 #ac-library
+atcoder
 atcoder/
 expander.py
 combined.cpp
