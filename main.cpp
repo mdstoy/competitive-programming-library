@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-#include <atcoder/all>
-using namespace atcoder;
+// #include <atcoder/all>
+// using namespace atcoder;
  
 using ll = long long;
 using ld = long double;
@@ -62,34 +62,6 @@ vi _c{0, 1, 0, -1};
 vi _r8{-1, -1, -1, 0, 1, 1, 1, 0};
 vi _c8{-1, 0, 1, 1, 1, 0, -1, -1};
 
-vector<pair<char, long long>> run_length(string s) {
-    int n = (int)s.size();
-    vector<pair<char, long long>> ret;
-    long long c = 1;
-    for (int i = 1; i < n; i++) {
-        if (s[i] == s[i - 1]) c++;
-        else {
-            ret.emplace_back(s[i - 1], c);
-            c = 1;
-        }
-    }
-    ret.emplace_back(s[n - 1], c);
-    return ret;
-}
-
 void solve() {
-    int n;
-    string s;
-    cin >> n >> s;
-    
-    auto l = run_length(s);
-    vi c(26);
-    for (auto p : l) {
-        cerr << p.first << " " << p.second << endl;
-        int idx = (int)(p.first - 'a');
-        chmax(c[idx], (int)p.second);
-    }
-    int ans = 0;
-    for (auto e : c) ans += e;
-    cout << ans << endl;
+
 }
