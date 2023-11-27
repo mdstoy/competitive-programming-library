@@ -2,6 +2,7 @@
 using namespace std;
  
 // verifing: https://atcoder.jp/contests/abc330/submissions/47996609
+// verifing: https://atcoder.jp/contests/abc194/submissions/47996687
 
 const int INF = 1000000001;
 
