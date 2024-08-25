@@ -49,22 +49,6 @@ map<ll, ll> prime_factorization(ll n) {
     return m;
 }
 
-int factorize_count(int n) {
-    int p = 0;
-    int x = n;
-    int d = 2;
-    while (x > 1 && d * d <= n) {
-        if (x % d == 0) {
-            p++;
-            x /= d;
-        } else {
-            d++;
-        }
-    }
-    if (x != 1) p++;
-    return p;
-}
-
 int main() {
     // expected: 4
     cout << gcd(8, 12) << endl;
