@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// NOTE: z_algorithm is also available in ACL.
+
 // test with https://judge.yosupo.jp/submission/3347
 vector<int> z_algorithm(const string& s) {
     int n = s.size();
