@@ -35,6 +35,7 @@ bin/
 old/
 srm/
 .vscode/
+.idea/
 
 #ac-library
 atcoder
