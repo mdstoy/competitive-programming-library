@@ -23,6 +23,7 @@ using vvb = vector<vector<bool>>;
 #define ALL(c) (c).begin(), (c).end()
 #define SORT(c) sort(ALL(c))
 #define REV(c) reverse(ALL(c))
+#define RSORT(c) SORT(c); REV(c)
 #define sz(v) (int)v.size()
 #define yn(b) cout << (b ? "Yes" : "No") << endl;
 #define YN(b) cout << (b ? "YES" : "NO") << endl;
